@@ -1,0 +1,28 @@
+@font-face{
+    font-family: 'Inter';
+    src: url('fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('trueType');
+}
+
+@font-face {
+    font-family: 'Antonio';
+    src: url('fonts/Antonio/static/Antonio-Bold.ttf') format('truetype');
+}
+
+h1, h2{
+  font-family:'Antonio';
+}
+
+nav, span{
+  font-family:'Inter';
+}
+
+.fa-instagram{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
