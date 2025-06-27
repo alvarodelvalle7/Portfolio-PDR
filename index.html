@@ -3,98 +3,117 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Pablo</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home - Pablo del Rincón</title>
+    <link rel="icon" href="../images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
-    <header class="encabezado flex flex-row items-center justify-between">
-        <img src="images/logo.png" alt="Logo PdR" class="w-[120px] h-auto pl-8">
-        <nav>
-            <ul class="flex flex-row gap-5 pr-20 text-[18px]">
-                <li><a href="#" class="font-semibold hover:bg-gray-300 p-4 rounded-lg">Home</a></li>
-                <li><a href="/html/about.html" class="font-semibold hover:bg-gray-300 p-4 rounded-lg" href="">Projects</a></li>
-                <li><a href="/html/about.html" class="font-semibold hover:bg-gray-300 p-4 rounded-lg" href="">About</a></li>
-                <li><a class="font-semibold hover:bg-gray-300 p-4 rounded-lg" href="">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div style="cursor: url('/images/cursor/cursor-del-raton.png'), auto;"></div> 
+
+  <header class="flex flex-row items-center justify-between p-5 relative">
+      <a href="../../index.html" class="cursor-pointer"><h1 class="text-4xl pl-[65px] font-bold">Pablo del Rincón</h1></a>
+      <nav>
+          <ul class="flex flex-row gap-5 pr-16 text-[18px] items-center">
+              <li><a href="../index.html" class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">Home</a></li>
+              <li><a class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">Projects</a></li>
+              <li><a href="/html/about.html" class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">About</a></li>
+            <li class="flex flex-col items-center relative group">
+              <button class="cursor-pointer bg-gradient-to-b from-black to-gray-700 px-6 py-3 rounded-xl border text-white font-medium">           
+                <div class="relative overflow-hidden h-[24px]">
+                  <p class="group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">Email me</p>
+                  <p class="absolute top-7 left-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">Email me</p>
+                </div>
+              </button>
+
+              <!-- Tooltip -->
+              <div id="correo" class="absolute top-full mt-2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 cursor-pointer z-10">
+                <div class="relative bg-white text-black px-4 py-2 rounded-lg border shadow-lg text-sm">pabloringab@gmail.com<div class="absolute left-1/2 -translate-x-1/2 -top-2 w-0 h-0 border-l-8 border-r-8 border-b-8 border-transparent border-b-white"></div>
+    </div>
+  </div>
+</li>
+
+          </ul>
+      </nav>
+  </header>
 
 <main>
 
-  <section>
-<video class="pl-10 pr-10" src="videos/Luka Modrić x Frame The Game.mp4" controls autoplay muted>
-</video>
+  <section class="flex justify-center">
+    <video class="pl-10 pr-10 w-[1810px] mt-[10px] h-auto" src="videos/Luka Modrić x Frame The Game.mp4" controls autoplay></video>
   </section>
 
-  <section class="flex flex-col pt-10 overflow-hidden">
+  <section class="flex flex-col pl-[65px] pr-[65px] pb-5 pt-5 overflow-hidden">
   <!-- Fila 1 -->
   <div class="flex flex-row p-5 gap-10 justify-center items-center">
-    <div class="relative group">
-      <img src="images/projects/romanista.png" class="w-[580px] h-[320px] object-cover cursor-pointer group-hover:blur-sm group-hover:scale-[1.1] transition ease-in-out duration-500" />
+    <a class="relative group cursor-pointer" href="html/projects html/romanista.html">
+      <img src="images/projects/romanista.png" class="w-[580px] h-[320px] object-cover group-hover:blur-sm group-hover:scale-[1.1] transition ease-in-out duration-500" />
       <span class="absolute inset-0 flex items-center justify-center text-white text-center px-4 text-2xl font-semibold opacity-0 group-hover:opacity-100 transition duration-500">
         MatchWornShirt – What it means to be a Romanista
       </span>
-    </div>
+    </a>
 
-    <div class="relative group">
+    <a class="relative group cursor-pointer" href="html/projects html/psg.html">
       <img src="images/projects/psg.png" class="w-[580px] h-[320px] object-cover cursor-pointer group-hover:blur-sm group-hover:scale-[1.1] transition ease-in-out duration-500" />
       <span class="absolute inset-0 flex items-center justify-center text-white text-center px-4 text-2xl font-semibold opacity-0 group-hover:opacity-100 transition duration-500">
         PSG x Fabricks Campaign video
       </span>
-    </div>
+    </a>
 
-    <div class="relative group">
+    <a class="relative group cursor-pointer" href="html/projects html/poppy.html">
       <img src="images/projects/poppy.png" class="w-[580px] h-[320px] object-cover cursor-pointer group-hover:blur-sm group-hover:scale-[1.1] transition ease-in-out duration-500" />
       <span class="absolute inset-0 flex items-center justify-center text-white text-center px-4 text-2xl font-semibold opacity-0 group-hover:opacity-100 transition duration-500">
         Poppy's Appeal
       </span>
-    </div>
+    </a>
   </div>
 
   <!-- Fila 2 -->
   <div class="flex flex-row p-5 gap-10 justify-center items-center">
-    <div class="relative group">
+    <a class="relative group cursor-pointer" href="html/projects html/sporting.html">
       <img src="images/projects/pink_october.png" class="w-[580px] h-[320px] object-cover cursor-pointer group-hover:blur-sm group-hover:scale-[1.1] transition ease-in-out duration-500" />
       <span class="absolute inset-0 flex items-center justify-center text-white text-center px-4 text-2xl font-semibold opacity-0 group-hover:opacity-100 transition duration-500">
         Sporting CP Pink October Campaign x MWS
       </span>
-    </div>
+    </a>
 
-    <div class="relative group">
+    <a class="relative group cursor-pointer" href="html/projects html/damo.html">
       <img src="images/projects/damo.png" class="w-[580px] h-[320px] object-cover cursor-pointer group-hover:blur-sm group-hover:scale-[1.1] transition ease-in-out duration-500" />
       <span class="absolute inset-0 flex items-center justify-center text-white text-center px-4 text-2xl font-semibold opacity-0 group-hover:opacity-100 transition duration-500">
         DAMÒ – AI Brand Video
       </span>
-    </div>
+    </a>
 
-    <div class="relative group">
+    <a class="relative group cursor-pointer" href="html/projects html/lazio.html">
       <img src="images/projects/lazio.png" class="w-[580px] h-[320px] object-cover cursor-pointer group-hover:blur-sm group-hover:scale-[1.1] transition ease-in-out duration-500" />
       <span class="absolute inset-0 flex items-center justify-center text-white text-center px-4 text-2xl font-semibold opacity-0 group-hover:opacity-100 transition duration-500">
         MatchWornShirt – The Story of Mauro Patrizi
       </span>
-    </div>
+    </a>
   </div>
   </section>
 
 </main>
 
-<footer class="relative bg-black flex flex-col items-center justify-center p-10 gap-3 w-full overflow-hidden mt-10">
-  <nav class="flex gap-[200px] pb-10">
-    <ul><li><a class="font-normal text-white border-b-2 pb-7 border-transparent hover:border-b-white ease-in-out duration-500" href="">Inicio</a></li></ul>
-    <ul><li><a class="font-normal text-white border-b-2 pb-7 border-transparent hover:border-b-white ease-in-out duration-500" href="">Projects</a></li></ul>
-    <ul><li><a class="font-normal text-white border-b-2 pb-7 border-transparent hover:border-b-white ease-in-out duration-500" href="">About</a></li></ul>
-  </nav>
-  <div class="absolute bottom-[135px] left-1/2 -translate-x-1/2 w-[90%] h-[1px] z-0 bg-gray-300"></div>
-  <a class="text-white" href="mailto:pabloringab@gmail.com">pabloringab@gmail.com</a>
-  <div class="flex gap-5">
-    <a href="https://www.instagram.com/pablodelrincn/"><i class="fa-brands fa-instagram text-3xl hover:scale-[1.1] ease-in-out duration-700"></i></a>
-    <a href="https://www.linkedin.com/in/pablo-d-8595441a0/"><i class="fa-brands fa-linkedin text-[#0A66C2] text-3xl hover:scale-[1.1] ease-in-out duration-700"></i></a>
-  </div>
-</footer>
+    <footer class="relative bg-black flex flex-col items-center justify-center p-10 gap-3 w-full overflow-hidden">
+        <nav>
+            <ul class="flex gap-[200px] pb-10">
+                <li><a class="font-normal text-white border-b-2 pb-7 border-transparent hover:border-b-white ease-in-out duration-500" href="">Home</a></li>
+                <li><a class="font-normal text-white border-b-2 pb-7 border-transparent hover:border-b-white ease-in-out duration-500" href="">Projects</a></li>
+                <li><a class="font-normal text-white border-b-2 pb-7 border-transparent hover:border-b-white ease-in-out duration-500" href="/html/about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="absolute bottom-[135px] left-1/2 -translate-x-1/2 w-[90%] h-[1px] z-0 bg-gray-300"></div>
+        <a class="text-white" href="mailto:pabloringab@gmail.com">pabloringab@gmail.com</a>
+        <div class="flex gap-5">
+            <a href="https://www.instagram.com/pablodelrincn/"><i class="fa-brands fa-instagram text-3xl hover:scale-[1.1] ease-in-out duration-700"></i></a>
+            <a href="https://www.linkedin.com/in/pablo-d-8595441a0/"><i class="fa-brands fa-linkedin text-[#0A66C2] text-3xl hover:scale-[1.1] ease-in-out duration-700"></i></a>
+        </div>
+    </footer>
 
+    <script src="index.js"></script>
 </body>
 </html>

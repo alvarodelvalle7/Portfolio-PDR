@@ -3,41 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About - Pablo del Rincón</title>
+    <link rel="icon" href="../images/logo.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="../styles.css"/>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <div style="cursor: url('/images/cursor/cursor-del-raton.png'), auto;"></div>
 
-    <header class="encabezado flex flex-row items-center justify-between">
-        <img src="../images/logo.png" alt="Logo PdR" class="w-[120px] h-auto pl-8">
+    <header class="flex flex-row items-center justify-between p-5">
+        <a href="../../index.html" class="cursor-pointer"><h1 class="text-4xl pl-[65px] font-bold">Pablo del Rincón</h1></a>
         <nav>
-            <ul class="flex flex-row gap-5 pr-20 text-[18px]">
-                <li><a href="../index.html" class="font-semibold hover:bg-gray-300 p-4 rounded-lg">Home</a></li>
-                <li><a class="font-semibold hover:bg-gray-300 p-4 rounded-lg">Projects</a></li>
-                <li><a href="#" class="font-semibold hover:bg-gray-300 p-4 rounded-lg">About</a></li>
-                <li><a class="font-semibold hover:bg-gray-300 p-4 rounded-lg">Contact</a></li>
+            <ul class="flex flex-row gap-5 pr-16 text-[18px] items-center">
+                <li><a href="../index.html" class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">Home</a></li>
+                <li><a class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">Projects</a></li>
+                <li><a href="../html/about.html" class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">About</a></li>
+                <li>
+                  <button class="cursor-pointer bg-gradient-to-b from-black to-gray-700 px-6 py-3 rounded-xl border-[1px] text-white font-medium group">           
+                  <div class="relative overflow-hidden">
+                    <p class="group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">Email me</p>
+                    <p class="absolute top-7 left-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">Email me</p>
+                  </div>
+                  </button>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <h2 class="ml-0 bg-black text-white p-7 rounded-tr-full rounded-br-full pl-[390px] mt-10 w-[700px] text-7xl">About me</h2>
+    <main class="flex flex-col justify-center items-center mt-[10px]">
 
-<main class="flex justify-center items-center p-10">
-  <section class="flex flex-col md:flex-row gap-10 max-w-6xl w-full items-center">
-    <div class="md:w-1/2 text-justify space-y-4">
-      <p class="text-4xl">Hi! I'm Pablo del Rincón,</p>
-      <p>A content creator specializing in photography and filmmaking. My journey spans roles as both an employee and freelancer, shaping a broad creative perspective.</p>
-      <p>I blend innovative concepts with bold aesthetics, crafting a unique visual language through image and sound.</p>
-      <p>From fashion to sports, I work across analog and digital mediums on commercial and social projects.</p>
-      <p>I've collaborated with clients like MatchWornShirts, PSG, AC Milan, Juventus, Real Madrid, and The Social Hub.</p>
-      <p>Deeply involved in the full creative process, I aim to capture, entertain, and engage.</p>
-      <p>Driven by vision and dedication, my goal is to evolve into a creative director leading with innovation.</p>
-    </div>
-      <img src="../images/perfil.png" alt="Foto de Perfil" class="max-w-xs rounded-xl shadow-lg">
-  </section>
-</main>
+        <section class="flex flex-row items-center justify-center relative">
+            <img src="/images/homepagebanner.jpg" alt="Homepagebanner" class="w-[1730px] h-auto z-0 brightness-[75%]">
+            <div class="absolute text-white pl-5 top-[400px] left-[20px]">
+                <h2 class="text-[100px]">Pablo del Rincón</h2>
+                <span class="text-4xl italic">Filmmaker and Creative Director</span>
+                <div class="absolute top-[210px] left-[22px] flex gap-3">
+                    <a href="https://www.instagram.com/pablodelrincn/"><i class="fa-brands fa-instagram text-4xl hover:scale-[1.2] ease-in-out duration-300"></i></a>
+                    <a href="https://www.linkedin.com/in/pablo-d-8595441a0/"><i class="fa-brands fa-linkedin text-[#0A66C2] text-4xl hover:scale-[1.2] ease-in-out duration-300"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-row gap-10 m-[87px] items-center">
+            <img src="/images/perfil.jpg" alt="Foto de Perfil" class="w-[1000px] h-auto shadow-lg">
+            <div class="flex flex-col gap-5" >
+                <h3 class="text-7xl border-b-[10px] w-[150px] border-black pb-5">Description</h3>
+                <div class="flex flex-col gap-5">
+                    <p class="text-2xl">I’m an audiovisual storyteller with a deep passion for capturing emotions and telling visual stories that move people. Whether it’s through video, photography, or music, I love creating content that feels authentic and engaging.</p>
+                    <p class="text-2xl">My background spans sports, music, and short-form content, but at the core, I’m driven by creativity, culture, and connection. I’m always looking for new ways to grow, collaborate, and take my craft to the next level — approaching every project with energy, purpose, and a commitment to making something truly memorable.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-row gap-10 mr-[87px] ml-[87px] items-center">
+            <div class="flex flex-col gap-5">
+                <h3 class="text-7xl border-b-[10px] w-[100px] border-black pb-5">Roles</h3>
+                <div>
+                    <h4 class="text-3xl font-bold">Creative Director</h4>
+                    <p class="text-2xl pt-2">I’m a Creative Director who shapes ideas into powerful visual stories. From concept to final output, I lead teams to craft bold, engaging content that connects with audiences across sports, music, and brands.</p>
+                </div>
+                <div>
+                    <h4 class="text-3xl font-bold">Video Producer & Colorist</h4>
+                    <p class="text-2xl pt-2">As a Video Producer and Colorist, I take projects from shoot to edit, enhancing them with cinematic color and style. My hands-on workflow ensures every video looks polished, dynamic, and true to its message.</p>
+                </div>
+                <div>
+                    <h4 class="text-3xl font-bold">Photographer & Photo Editor </h4>
+                    <p class="text-2xl pt-2">I’m a Photographer and Photo Editor focused on capturing authentic, striking images. Whether shooting portraits, lifestyle, or sports, I fine-tune each photo to highlight its energy, mood, and visual impact.</p>
+                </div>
+            </div>
+            <img src="/images/silva.jpg" alt="chatting with Silva" class="w-[1800px] max-h-[600px] object-cover shadow-lg">
+        </section>
+
+        <section class="flex flex-col justify-center items-center m-20 mt-[160px] gap-16">
+            <div class="flex flex-col gap-7">
+                <h3 class="text-7xl">Softwares</h3>
+                <span class="block w-[150px] border-b-[10px] border-black"></span>
+            </div>
+            <div class="flex gap-10">
+                <div>
+                    <div class="flex items-center justify-center pb-10 pr-8">
+                        <img src="/images/iconos/premiere.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
+                    </div>
+                    <h4 class="text-3xl font-bold">Adobe Premiere Pro</h4>
+                    <h5 class="text-2xl font-semibold text-gray-300">Video Editing</h5>
+                    <p class="text-xl pt-2">Professional software for editing videos with powerful and flexible tools.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center pb-10 pr-8">
+                        <img src="/images/iconos/davinci.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
+                    </div>
+                    <h4 class="text-3xl font-bold">Davinci Resolve</h4>
+                    <h5 class="text-2xl font-semibold text-gray-300">Video Editing & Color Grading</h5>
+                    <p class="text-xl pt-2">Advanced application for video editing and professional cinematic color correction.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center pb-10 pr-8">
+                        <img src="/images/iconos/lightroom.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
+                    </div>
+                    <h4 class="text-3xl font-bold">Adobe Lightroom</h4>
+                    <h5 class="text-2xl font-semibold text-gray-300">Photo Editing & Color</h5>
+                    <p class="text-xl pt-2">Intuitive software for editing photos and adjusting color quickly easily.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center pb-10 pr-8">
+                        <img src="/images/iconos/photoshop.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
+                    </div>
+                    <h4 class="text-3xl font-bold">Adobe Photoshop</h4>
+                    <h5 class="text-2xl font-semibold text-gray-300">Image Editing</h5>
+                    <p class="text-xl pt-2">Versatile tool for editing images and creating high-quality visual compositions.</p>
+                </div>
+                <div>
+                    <div class="flex items-center justify-center pb-10 pr-8">
+                        <img src="/images/iconos/effects.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
+                    </div>
+                    <h4 class="text-3xl font-bold">Adobe After Effects</h4>
+                    <h5 class="text-2xl font-semibold text-gray-300">Motion Graphics</h5>
+                    <p class="text-xl pt-2">Software for animating graphics, visual effects, and dynamic video compositions.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="absolute top-[3440px] left-[150px] right-[150px] h-[2px] bg-gray-200 z-0"></div>
+
+        <section class="flex flex-col justify-center items-center m-20 gap-14">
+            <div class="flex flex-col gap-7">
+                <h3 class="text-7xl">Languages</h3>
+                <span class="block w-[150px] border-b-[10px] border-black"></span>
+            </div>
+            <div class="flex gap-10 pb-5 justify-center items-start">
+                <div class="flex flex-col items-center w-[300px]">
+                    <div class="flex items-center justify-center">
+                        <img src="/images/flags/spain.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
+                    </div>
+                    <h4 class="text-3xl font-bold">Spanish</h4>
+                    <p class="text-xl pt-2">Native speaker with full fluency and rich vocabulary.</p>
+                </div>
+                <div class="flex flex-col items-center w-[300px]">
+                    <div class="flex items-center justify-center">
+                        <img src="/images/flags/uk.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
+                    </div>
+                    <h4 class="text-3xl font-bold">English</h4>
+                    <p class="text-xl pt-2">Advanced communication skills, fluent and confident in all contexts.</p>
+                </div>
+                <div class="flex flex-col items-center w-[300px]">
+                    <div class="flex items-center justify-center">
+                        <img src="/images/flags/cataluña.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto]">
+                    </div>
+                    <h4 class="text-3xl font-bold">Catalan</h4>
+                    <p class="text-xl pt-2">Conversational, warm, and comfortable for everyday use.</p>
+                </div>
+                <div class="flex flex-col items-center w-[300px]">
+                    <div class="flex items-center justify-center">
+                        <img src="/images/flags/italia.png" alt="Adobe Premiere Pro" class="w-[120px] h-[85px] h-auto">
+                    </div>
+                    <h4 class="text-3xl font-bold">Italian</h4>
+                    <p class="text-xl pt-2">Intermediate level, capable of handling casual conversations and basic professional interactions.</p>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="relative bg-black flex flex-col items-center justify-center p-10 gap-3 w-full overflow-hidden mt-10">
+        <nav>
+            <ul class="flex gap-[200px] pb-10">
+                <li><a class="font-normal text-white border-b-2 pb-7 border-transparent hover:border-b-white ease-in-out duration-500" href="">Inicio</a></li>
+                <li><a class="font-normal text-white border-b-2 pb-7 border-transparent hover:border-b-white ease-in-out duration-500" href="">Projects</a></li>
+                <li><a class="font-normal text-white border-b-2 pb-7 border-transparent hover:border-b-white ease-in-out duration-500" href="">About</a></li>
+            </ul>
+        </nav>
+        <div class="absolute bottom-[135px] left-1/2 -translate-x-1/2 w-[90%] h-[1px] z-0 bg-gray-300"></div>
+        <a class="text-white" href="mailto:pabloringab@gmail.com">pabloringab@gmail.com</a>
+        <div class="flex gap-5">
+            <a href="https://www.instagram.com/pablodelrincn/"><i class="fa-brands fa-instagram text-3xl hover:scale-[1.1] ease-in-out duration-700"></i></a>
+            <a href="https://www.linkedin.com/in/pablo-d-8595441a0/"><i class="fa-brands fa-linkedin text-[#0A66C2] text-3xl hover:scale-[1.1] ease-in-out duration-700"></i></a>
+        </div>
+    </footer>
 
 </body>
 </html>
