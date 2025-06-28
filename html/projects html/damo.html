@@ -9,39 +9,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <header class="flex flex-row items-center justify-between p-5">
-      <a href="../../index.html" class="cursor-pointer"><h1 class="text-4xl pl-[65px] font-bold">Pablo del Rincón</h1></a>
+
+  <header class="flex flex-row items-center justify-between relative">
+      <a href="../../index.html" class="cursor-pointer"><h1 class="text-3xl pl-[40px] pb-5 pt-5 font-bold">Pablo del Rincón</h1></a>
       <nav>
-          <ul class="flex flex-row gap-5 pr-16 text-[18px] items-center">
-              <li><a href="../index.html" class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">Home</a></li>
+          <ul class="flex flex-row gap-5 pr-10 text-[14px] items-center">
+              <li><a href="../../index.html" class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">Home</a></li>
               <li><a class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">Projects</a></li>
-              <li><a href="/html/about.html" class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">About</a></li>
-              <li>
-                <button class="cursor-pointer bg-gradient-to-b from-black to-gray-700 px-6 py-3 rounded-xl border-[1px] text-white font-medium group">           
-                <div class="relative overflow-hidden">
+              <li><a href="../about.html" class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">About</a></li>
+            <li class="flex flex-col items-center relative group">
+              <button class="cursor-pointer bg-gradient-to-b from-black to-gray-700 px-4 py-3 rounded-xl border text-white font-medium">           
+                <div class="relative overflow-hidden h-[24px]">
                   <p class="group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">Email me</p>
                   <p class="absolute top-7 left-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">Email me</p>
                 </div>
-                </button>
-              </li>
+              </button>
+              <div id="correo" class="absolute top-full mt-2 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 cursor-pointer z-10">
+                <div class="relative bg-white text-black px-4 py-2 rounded-lg border shadow-lg text-sm">pabloringab@gmail.com<div class="absolute left-1/2 -translate-x-1/2 -top-2 w-0 h-0 border-l-8 border-r-8 border-b-8 border-transparent border-b-white"></div>
+                </div>
+              </div>
+            </li>
           </ul>
       </nav>
   </header>
 
     <main class="flex flex-col justify-center items-center gap-10 mt-20">
-        <h2 class="text-8xl pb-5">DAMÒ – AI Brand Video</h2>
-        <iframe class="w-[1740px] h-[1000px]" src="https://www.youtube.com/embed/rhxB8GWpEmI" 
+        <h2 class="text-7xl pb-5">DAMÒ – AI Brand Video</h2>
+        <iframe class="w-[1360px] h-[1000px]" src="https://www.youtube.com/embed/rhxB8GWpEmI" 
         title="YouTube video player" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowfullscreen>
         </iframe>
-        <div class="m-[80px] flex flex-col gap-10">
-          <h3 class="text-6xl">Description</h3>
-          <p class="text-3xl">I recently collaborated with DAMÒ, an innovative brand focused on the 
+        <div class="m-[80px] flex flex-col gap-10 mt-10">
+          <h3 class="text-5xl">Description</h3>
+          <p class="text-2xl">I recently collaborated with DAMÒ, an innovative brand focused on the 
           integration of AI in fashion and lifestyle products. The video aimed to 
           introduce DAMÒ’s cutting-edge approach to intelligent design and 
           showcase how AI is shaping new consumer experiences.</p>
-          <p class="text-3xl">Through creative storytelling and dynamic visuals, the video highlights 
+          <p class="text-2xl">Through creative storytelling and dynamic visuals, the video highlights 
           DAMÒ’s unique identity and its vision for the future. This project involved 
           concept development, production, and post-production, and strengthened 
           my experience in producing brand content that bridges technology and 
@@ -49,20 +54,20 @@
         </div>
     </main>
 
-    <footer class="relative bg-black flex flex-col items-center justify-center p-10 gap-3 w-full overflow-hidden mt-10">
-      <nav>
-          <ul class="flex gap-[200px] pb-10">
-            <li><a class="font-normal text-white border-b-2 pb-7 border-transparent hover:border-b-white ease-in-out duration-500" href="">Home</a></li>
-              <li><a class="font-normal text-white border-b-2 pb-7 border-transparent hover:border-b-white ease-in-out duration-500" href="">Projects</a></li>
-              <li><a class="font-normal text-white border-b-2 pb-7 border-transparent hover:border-b-white ease-in-out duration-500" href="">About</a></li>
-          </ul>
-      </nav>
-      <div class="absolute bottom-[135px] left-1/2 -translate-x-1/2 w-[90%] h-[1px] z-0 bg-gray-300"></div>
-      <a class="text-white" href="mailto:pabloringab@gmail.com">pabloringab@gmail.com</a>
-      <div class="flex gap-5">
-          <a href="https://www.instagram.com/pablodelrincn/"><i class="fa-brands fa-instagram text-3xl hover:scale-[1.1] ease-in-out duration-700"></i></a>
-          <a href="https://www.linkedin.com/in/pablo-d-8595441a0/"><i class="fa-brands fa-linkedin text-[#0A66C2] text-3xl hover:scale-[1.1] ease-in-out duration-700"></i></a>
-      </div>
+    <footer class="relative bg-black flex flex-col items-center justify-center p-10 gap-3 w-full overflow-hidden">
+        <nav>
+            <ul class="flex gap-[200px] pb-10 text-[14px]">
+                <li><a class="font-normal text-white border-b-4 pb-[22px] border-transparent hover:border-b-white ease-in-out duration-500" href="">Home</a></li>
+                <li><a class="font-normal text-white border-b-4 pb-[22px] border-transparent hover:border-b-white ease-in-out duration-500" href="">Projects</a></li>
+                <li><a class="font-normal text-white border-b-4 pb-[22px] border-transparent hover:border-b-white ease-in-out duration-500" href="">About</a></li>
+            </ul>
+        </nav>
+        <div class="absolute bottom-[140px] left-1/2 -translate-x-1/2 w-[90%] h-[1px] z-0 bg-gray-300"></div>
+        <a class="text-white text-[14px] pt-2" href="mailto:pabloringab@gmail.com">pabloringab@gmail.com</a>
+        <div class="flex gap-5">
+            <a href="https://www.instagram.com/pablodelrincn/"><i class="fa-brands fa-instagram text-3xl hover:scale-[1.1] ease-in-out duration-300"></i></a>
+            <a href="https://www.linkedin.com/in/pablo-d-8595441a0/"><i class="fa-brands fa-linkedin text-[#0A66C2] text-3xl hover:scale-[1.1] ease-in-out duration-300"></i></a>
+        </div>
     </footer>
     
 </body>
