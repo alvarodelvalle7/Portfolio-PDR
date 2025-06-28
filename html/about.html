@@ -11,12 +11,15 @@
 <body class="overflow-x-hidden">
 
   <header class="flex flex-row items-center justify-between relative">
-      <a href="../../index.html" class="cursor-pointer"><h1 class="text-3xl pl-[40px] pb-5 pt-5 font-bold">Pablo del Rincón</h1></a>
+      <a href="../../index.html" class="cursor-pointer"><h1 class=" text-2xl lg:text-3xl pl-[40px] pb-5 pt-5 font-bold">Pablo del Rincón</h1></a>
       <nav>
-          <ul class="flex flex-row gap-5 pr-10 text-[14px] items-center">
+          <button id="menu-toggle" class="md:hidden text-3xl cursor-pointer px-10">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul id="nav-menu" class="hidden md:flex gap-6 text-sm font-semibold px-4 px-10 md:items-center">
               <li><a href="../index.html" class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">Home</a></li>
               <li><a class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">Projects</a></li>
-              <li><a href="/html/about.html" class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">About</a></li>
+              <li><a href="about.html" class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">About</a></li>
             <li class="flex flex-col items-center relative group">
               <button class="cursor-pointer bg-gradient-to-b from-black to-gray-700 px-4 py-3 rounded-xl border text-white font-medium">           
                 <div class="relative overflow-hidden h-[24px]">
@@ -35,31 +38,42 @@
 
     <main class="flex flex-col justify-center items-center mt-[10px]">
 
-        <section class="flex flex-row items-center justify-center relative">
-            <img src="/images/homepagebanner.jpg" alt="Homepagebanner" class="w-[1440px] h-auto z-0 brightness-[75%]">
-            <div class="absolute text-white pl-5 top-[400px] left-[20px]">
-                <h2 class="text-[100px]">Pablo del Rincón</h2>
-                <span class="text-4xl italic">Filmmaker and Creative Director</span>
-                <div class="absolute top-[210px] left-[22px] flex gap-3">
-                    <a href="https://www.instagram.com/pablodelrincn/"><i class="fa-brands fa-instagram text-4xl hover:scale-[1.2] ease-in-out duration-300"></i></a>
-                    <a href="https://www.linkedin.com/in/pablo-d-8595441a0/"><i class="fa-brands fa-linkedin text-[#0A66C2] text-4xl hover:scale-[1.2] ease-in-out duration-300"></i></a>
+        <section class="relative w-full h-[100vh] overflow-hidden">
+            <img src="/images/homepagebanner.jpg" alt="Homepagebanner" class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[95%] h-full brightness-[75%] z-0" />
+            <div class="relative z-10 flex flex-col items-start justify-center h-full px-5 lg:px-20 text-white">
+                <h2 class="text-[40px] lg:text-[100px]">Pablo del Rincón</h2>
+                <span class="text-2xl lg:text-4xl italic">Filmmaker and Creative Director</span>
+                
+                <div class="flex gap-3 mt-6">
+                    <a href="https://www.instagram.com/pablodelrincn/">
+                        <i class="fa-brands fa-instagram text-2xl lg:text-4xl hover:scale-[1.2] ease-in-out duration-300"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pablo-d-8595441a0/">
+                        <i class="fa-brands fa-linkedin text-[#0A66C2] text-2xl lg:text-4xl hover:scale-[1.2] ease-in-out duration-300"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section class="flex flex-row gap-10 m-[40px] mt-20 items-center">
-            <img src="/images/perfil.jpg" alt="Foto de Perfil" class="w-[760px] h-auto shadow-lg">
-            <div class="flex flex-col gap-5" >
-                <h3 class="text-6xl border-b-[10px] w-[150px] border-black pb-5">Description</h3>
-                <div class="flex flex-col gap-5">
-                    <p class="text-xl">I’m an audiovisual storyteller with a deep passion for capturing emotions and telling visual stories that move people. Whether it’s through video, photography, or music, I love creating content that feels authentic and engaging.</p>
-                    <p class="text-xl">My background spans sports, music, and short-form content, but at the core, I’m driven by creativity, culture, and connection. I’m always looking for new ways to grow, collaborate, and take my craft to the next level — approaching every project with energy, purpose, and a commitment to making something truly memorable.</p>
-                </div>
-            </div>
-        </section>
 
-        <section class="flex flex-row gap-10 mr-[40px] ml-[40px] mt-20 items-center">
+        <section class="flex flex-col lg:flex-row gap-10 m-5 lg:mx-[38px] lg:my-20 items-center">
+        <img src="/images/perfil.jpg" alt="Foto de Perfil" class="w-[760px] h-auto shadow-lg">
+        <div class="flex flex-col gap-5">
+            <h3 class="text-4xl sm:text-5xl lg:text-6xl border-b-[10px] w-[100px] border-black pb-5">Description</h3>
             <div class="flex flex-col gap-5">
+            <p class="text-base sm:text-lg lg:text-xl">
+                I’m an audiovisual storyteller with a deep passion for capturing emotions and telling visual stories that move people. Whether it’s through video, photography, or music, I love creating content that feels authentic and engaging.
+            </p>
+            <p class="text-base sm:text-lg lg:text-xl">
+                My background spans sports, music, and short-form content, but at the core, I’m driven by creativity, culture, and connection. I’m always looking for new ways to grow, collaborate, and take my craft to the next level — approaching every project with energy, purpose, and a commitment to making something truly memorable.
+            </p>
+            </div>
+        </div>
+        </section>
+
+
+        <section class="flex flex-col lg:flex-row gap-10 m-5 lg:mx-[38px] lg:my-20 items-center">
+            <div class="flex flex-col gap-5 order-2 lg:order-1">
                 <h3 class="text-6xl border-b-[10px] w-[100px] border-black pb-5">Roles</h3>
                 <div>
                     <h4 class="text-2xl font-bold">Creative Director</h4>
@@ -74,7 +88,7 @@
                     <p class="text-xl pt-2">I’m a Photographer and Photo Editor focused on capturing authentic, striking images. Whether shooting portraits, lifestyle, or sports, I fine-tune each photo to highlight its energy, mood, and visual impact.</p>
                 </div>
             </div>
-            <img src="/images/silva.jpg" alt="chatting with Silva" class="w-[1800px] max-h-[600px] object-cover shadow-lg">
+            <img src="/images/silva.jpg" alt="chatting with Silva" class="w-[1800px] max-h-[600px] object-cover shadow-lg order-1 lg:order-2">
         </section>
 
         <section class="flex flex-col justify-center items-center m-20 mt-20 mr-[40px] ml-[40px] gap-16">
@@ -82,41 +96,41 @@
                 <h3 class="text-6xl">Softwares</h3>
                 <span class="block w-[150px] border-b-[10px] border-black"></span>
             </div>
-            <div class="flex gap-10">
-                <div>
-                    <div class="flex items-center justify-center pb-10 pr-8">
+            <div class="flex flex-col flex-wrap lg:flex-row gap-10">
+                <div class="flex flex-col items-center text-center w-[200px]">
+                    <div class="flex items-center justify-center pb-10">
                         <img src="/images/iconos/premiere.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
                     </div>
                     <h4 class="text-2xl font-bold">Adobe Premiere Pro</h4>
                     <h5 class="text-xl font-semibold text-gray-300">Video Editing</h5>
                     <p class="pt-2">Professional software for editing videos with powerful and flexible tools.</p>
                 </div>
-                <div>
-                    <div class="flex items-center justify-center pb-10 pr-8">
+                <div class="flex flex-col items-center text-center w-[200px]">
+                    <div class="flex items-center justify-center pb-10">
                         <img src="/images/iconos/davinci.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
                     </div>
                     <h4 class="text-2xl font-bold">Davinci Resolve</h4>
                     <h5 class="text-xl font-semibold text-gray-300">Video Editing & Color Grading</h5>
                     <p class="pt-2">Advanced application for video editing and professional cinematic color correction.</p>
                 </div>
-                <div>
-                    <div class="flex items-center justify-center pb-10 pr-8">
+                <div class="flex flex-col items-center text-center w-[200px]">
+                    <div class="flex items-center justify-center pb-10">
                         <img src="/images/iconos/lightroom.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
                     </div>
                     <h4 class="text-2xl font-bold">Adobe Lightroom</h4>
                     <h5 class="text-xl font-semibold text-gray-300">Photo Editing & Color</h5>
                     <p class="pt-2">Intuitive software for editing photos and adjusting color quickly easily.</p>
                 </div>
-                <div>
-                    <div class="flex items-center justify-center pb-10 pr-8">
+                <div class="flex flex-col items-center text-center w-[200px]">
+                    <div class="flex items-center justify-center pb-10">
                         <img src="/images/iconos/photoshop.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
                     </div>
                     <h4 class="text-2xl font-bold">Adobe Photoshop</h4>
                     <h5 class="text-xl font-semibold text-gray-300">Image Editing</h5>
                     <p class="pt-2">Versatile tool for editing images and creating high-quality visual compositions.</p>
                 </div>
-                <div>
-                    <div class="flex items-center justify-center pb-10 pr-8">
+                <div class="flex flex-col items-center text-center w-[200px]">
+                    <div class="flex items-center justify-center pb-10">
                         <img src="/images/iconos/effects.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
                     </div>
                     <h4 class="text-2xl font-bold">Adobe After Effects</h4>
@@ -126,36 +140,36 @@
             </div>
         </section>
 
-        <div class="absolute top-[2980px] left-[150px] right-[150px] h-[2px] bg-gray-200 z-0"></div>
+        <div class="w-[90%] h-[2px] bg-gray-200 my-5 mx-auto"></div>
 
         <section class="flex flex-col justify-center items-center m-20 gap-14">
             <div class="flex flex-col gap-7">
                 <h3 class="text-6xl">Languages</h3>
                 <span class="block w-[150px] border-b-[10px] border-black"></span>
             </div>
-            <div class="flex gap-10 pb-5 justify-center items-start">
-                <div class="flex flex-col items-center w-[300px]">
+            <div class="flex flex-col flex-wrap lg:flex-row gap-10 pb-5 items-start justify-center">
+                <div class="flex flex-col w-[300px] text-center">
                     <div class="flex items-center justify-center">
                         <img src="/images/flags/spain.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
                     </div>
                     <h4 class="text-2xl font-bold">Spanish</h4>
                     <p class="pt-2">Native speaker with full fluency and rich vocabulary.</p>
                 </div>
-                <div class="flex flex-col items-center w-[300px]">
+                <div class="flex flex-col items-center w-[300px] text-center">
                     <div class="flex items-center justify-center">
                         <img src="/images/flags/uk.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
                     </div>
                     <h4 class="text-2xl font-bold">English</h4>
                     <p class="pt-2">Advanced communication skills, fluent and confident in all contexts.</p>
                 </div>
-                <div class="flex flex-col items-center w-[300px]">
+                <div class="flex flex-col items-center w-[300px] text-center">
                     <div class="flex items-center justify-center">
                         <img src="/images/flags/cataluña.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto]">
                     </div>
                     <h4 class="text-2xl font-bold">Catalan</h4>
                     <p class="pt-2">Conversational, warm, and comfortable for everyday use.</p>
                 </div>
-                <div class="flex flex-col items-center w-[300px]">
+                <div class="flex flex-col items-center w-[300px] text-center">
                     <div class="flex items-center justify-center">
                         <img src="/images/flags/italia.png" alt="Adobe Premiere Pro" class="w-[120px] h-[85px] h-auto">
                     </div>
@@ -170,19 +184,21 @@
 
     <footer class="relative bg-black flex flex-col items-center justify-center p-10 gap-3 w-full overflow-hidden">
         <nav>
-            <ul class="flex gap-[200px] pb-10 text-[14px]">
-                <li><a class="font-normal text-white border-b-4 pb-[22px] border-transparent hover:border-b-white ease-in-out duration-500" href="../index.html">Home</a></li>
-                <li><a class="font-normal text-white border-b-4 pb-[22px] border-transparent hover:border-b-white ease-in-out duration-500" href="">Projects</a></li>
-                <li><a class="font-normal text-white border-b-4 pb-[22px] border-transparent hover:border-b-white ease-in-out duration-500" href="./about.html">About</a></li>
+            <ul class="flex flex-col gap-[20px] pb-12 text-[14px] lg:flex-row lg:pb-10 lg:gap-[200px]">
+                <li><a class="font-normal text-white lg:border-b-4 pb-[22px] border-transparent hover:border-b-white ease-in-out duration-500" href="./index.html">Home</a></li>
+                <li><a class="font-normal text-white lg:border-b-4 pb-[22px] border-transparent hover:border-b-white ease-in-out duration-500" href="">Projects</a></li>
+                <li><a class="font-normal text-white lg:border-b-4 pb-[22px] border-transparent hover:border-b-white ease-in-out duration-500" href="/html/about.html">About</a></li>
             </ul>
         </nav>
-        <div class="absolute bottom-[140px] left-1/2 -translate-x-1/2 w-[90%] h-[1px] z-0 bg-gray-300"></div>
-        <a class="text-white text-[14px] pt-2" href="mailto:pabloringab@gmail.com">pabloringab@gmail.com</a>
+        <div class="absolute bottom-[135px] left-1/2 -translate-x-1/2 w-[90%] h-[1px] z-0 bg-gray-300"></div>
+        <a class="text-white text-[14px] lg:pt-2" href="mailto:pabloringab@gmail.com">pabloringab@gmail.com</a>
         <div class="flex gap-5">
             <a href="https://www.instagram.com/pablodelrincn/"><i class="fa-brands fa-instagram text-3xl hover:scale-[1.1] ease-in-out duration-300"></i></a>
             <a href="https://www.linkedin.com/in/pablo-d-8595441a0/"><i class="fa-brands fa-linkedin text-[#0A66C2] text-3xl hover:scale-[1.1] ease-in-out duration-300"></i></a>
         </div>
     </footer>
+
+    <script src="index.js"></script>
 
 </body>
 </html>
