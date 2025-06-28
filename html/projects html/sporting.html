@@ -11,12 +11,26 @@
 <body>
 
   <header class="flex flex-row items-center justify-between relative">
-      <a href="../../index.html" class="cursor-pointer"><h1 class="text-3xl pl-[40px] pb-5 pt-5 font-bold">Pablo del Rincón</h1></a>
+      <a href="../../index.html" class="cursor-pointer"><h1 class=" text-2xl lg:text-3xl pl-[40px] pb-5 pt-5 font-bold">Pablo del Rincón</h1></a>
       <nav>
-          <ul class="flex flex-row gap-5 pr-10 text-[14px] items-center">
-              <li><a href="../../index.html" class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">Home</a></li>
-              <li><a class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">Projects</a></li>
-              <li><a href="../about.html" class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">About</a></li>
+          <button id="menu-toggle" class="block md:hidden text-3xl cursor-pointer px-10">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul id="nav-menu" class="hidden md:flex gap-6 text-sm font-semibold px-10 md:items-center">
+              <li><a href="../index.html" class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">Home</a></li>
+              <li class="relative group">
+                <a class=" cursor-pointer font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg flex items-center justify-between w-full">Projects</a>
+                <ul class="absolute right-0 top-full mt-0 w-[400px] h-[480px] bg-white font-medium text-black shadow-lg hidden group-hover:block lg:group-hover:block z-50">
+                  <li><a class="block py-6 hover:bg-gray-300 w-full px-4" href="./modric.html">Modric - Frame the game</a></li>
+                  <li><a class="block py-6 hover:bg-gray-300 w-full px-4" href="./romanista.html">MatchWornShirt – What it means to be a Romanista</a></li>
+                  <li><a class="block py-6 hover:bg-gray-300 w-full px-4" href="./psg.html">PSG x Fabricks Campaign video</a></li>
+                  <li><a class="block py-6 hover:bg-gray-300 w-full px-4" href="./poppy.html">Poppy's Appeal</a></li>
+                  <li><a class="block py-6 hover:bg-gray-300 w-full px-4" href="./sporting.html">Sporting CP Pink October Campaign x MWS</a></li>
+                  <li><a class="block py-6 hover:bg-gray-300 w-full px-4" href="./damo.html">DAMÒ – AI Brand Video</a></li>
+                  <li><a class="block py-6 hover:bg-gray-300 w-full px-4" href="./lazio.html">MatchWornShirt – The Story of Mauro Patrizi</a></li>
+                </ul>
+              </li>
+              <li><a href="/html/about.html" class="font-semibold hover:bg-gray-200 hover:text-white p-4 rounded-lg">About</a></li>
             <li class="flex flex-col items-center relative group">
               <button class="cursor-pointer bg-gradient-to-b from-black to-gray-700 px-4 py-3 rounded-xl border text-white font-medium">           
                 <div class="relative overflow-hidden h-[24px]">
