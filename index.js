@@ -1,12 +1,14 @@
-const boton = document.querySelector('.group');
+const boton = document.querySelector('.group2');
 const correo = document.getElementById('correo');
 
 boton.addEventListener('mouseenter', () => {
-  correo.style.opacity = '1';
+  correo.classList.remove('opacity-0');
+  correo.classList.add('opacity-100');
 });
 
 boton.addEventListener('mouseleave', () => {
-  correo.style.opacity = '0';
+  correo.classList.remove('opacity-100');
+  correo.classList.add('opacity-0');
 });
 
 correo.addEventListener('click', () => {
