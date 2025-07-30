@@ -11,48 +11,28 @@
 
 <body class="overflow-x-hidden">
 
-    <header class="max-w-[85%] mx-auto flex justify-between items-center py-5">
-      <a href="../../index.html" class="cursor-pointer"><h1 class="text-2xl lg:text-3xl pb-5 pt-5 font-bold">Pablo del Rincón</h1></a>
-      <nav>
-          <button id="menu-toggle" class="block md:hidden text-3xl cursor-pointer">
-            <i class="fas fa-bars"></i>
-          </button>
-          <ul id="nav-menu" class="hidden md:flex gap-6 text-sm font-semibold md:items-center">
-            <li><a href="../../index.html" class="font-semibold hover:bg-gray-200 hover:text-white px-4 py-3">Home</a></li>
-            <li class="relative group">
-              <a class=" cursor-pointer font-semibold hover:bg-gray-200 hover:text-white px-4 py-3 flex items-center justify-between w-full">Projects</a>
-              <ul class="absolute right-0 top-full mt-0 w-[400px] bg-white font-medium text-black shadow-lg hidden group-hover:block lg:group-hover:block z-50">
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/modric.html">Modric - Frame the game</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/romanista.html">MatchWornShirt – What it means to be a Romanista</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/psg.html">PSG x Fabricks Campaign video</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/poppy.html">Poppy's Appeal</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/sporting.html">Sporting CP Pink October Campaign x MWS</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/damo.html">DAMÒ – AI Brand Video</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/lazio.html">MatchWornShirt – The Story of Mauro Patrizi</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/vintage.html">Wanna Vintage - Vintage Fashion</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/blurred_party.html">Blurred Party</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/collectors.html">Collector's History</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/chelsea.html">MatchWornShirt - Chelsea's announcement</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/fifpro.html">FIFPRO Event - Working session</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/event.html">MatchWornShirt - Partnership & Kitman Event</a></li>
-              </ul>
-            </li>
-            <li><a href="/html/about.html" class="font-semibold hover:bg-gray-200 hover:text-white px-4 py-3">About</a></li>
-            <li class="flex flex-col items-center relative group">
-              <a href="mailto:pabloringab@gmail.com" 
-                  class="cursor-pointer bg-gradient-to-b from-black to-gray-700 px-4 py-3 border text-white font-medium rounded-sm relative overflow-hidden">
-                  
-                  <div class="relative overflow-hidden">
-                      <p class="group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">Email me</p>
-                      <p class="absolute top-7 left-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">Email me</p>
-                  </div>
+  <header>
+      <nav aria-label="Main navigation" class="flex flex-col items-start lg:items-center justify-between lg:flex-row px-9 md:px-15 lg:px-29 py-7 shadow-lg">
+          <div class="flex flex-row items-center justify-between w-full">
+              <a href="index.html">
+                <h1 class="text-2xl font-bold">Pablo del Rincón</h1>
               </a>
-            </li>
+              <button class="lg:hidden cursor-pointer" id="menu-toggle" aria-label="Toggle navigation">
+                  <i class="fas fa-bars text-2xl" id="menu-icon"></i>
+              </button>
+          </div>
+          <ul class="hidden flex-col lg:flex lg:flex-row space-x-10 space-y-7 lg:space-y-0 pt-8 lg:pt-0" id="menu">
+              <li><a href="index.html"class="hover:bg-gray-300 hover:text-white p-3 rounded-sm">Home</a></li>
+              <li><a href="/html/about.html"class="hover:bg-gray-300 hover:text-white p-3 rounded-sm">About</a></li>
+              <li>
+                  <a class="hover:bg-gray-300 hover:text-white p-3 rounded-sm">Projects</a>
+              </li>
+              <li><a href="mailto:pabloringab@gmail.com" class="whitespace-nowrap bg-black hover:bg-gray-800 text-white p-3 rounded-sm">Email me</a></li>
           </ul>
       </nav>
-    </header>
+  </header>
 
-  <main>
+  <main class="mt-8">
 
     <section class="max-w-[85%] mx-auto">
       <div class="w-full aspect-video">
