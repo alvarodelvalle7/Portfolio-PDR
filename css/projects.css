@@ -250,6 +250,12 @@ footer nav div {
     color: #0A66C2;
 }
 
+@media (max-width:1200px) {
+    iframe {
+        width:99vw;
+    }
+}
+
 @media (max-width: 1000px) {
     header {
         padding: 15px 40px;
@@ -262,6 +268,10 @@ footer nav div {
     #subprojects.active {
         padding: 20px 40px;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    iframe {
+        width:98vw;
     }
   
 }
@@ -328,6 +338,10 @@ footer nav div {
         gap: 15px;
     }
 
+    iframe {
+        width:97vw;
+    }
+
     footer nav ul {
         flex-direction: column;
         border:none
@@ -351,6 +365,11 @@ footer nav div {
 
     footer nav ul {
         gap: 1.5rem;
+    }
+
+    iframe {
+        height: 220px;
+        padding: 0 1rem;
     }
 
 }
