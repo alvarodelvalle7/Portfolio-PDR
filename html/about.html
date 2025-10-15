@@ -4,217 +4,211 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Pablo del Rincón</title>
-    <link rel="icon" href="../../images/logo.jpeg" type="image/x-icon">
-    <link href="../output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href="../img/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
-<body class="overflow-x-hidden">
+<body>
+    
+    <!--Header-->
+    <header>
+        
+        <h1><a href="index.html">Pablo del Rincón</a></h1>
 
-    <header class="max-w-[85%] mx-auto flex justify-between items-center py-5">
-      <a href="../../index.html" class="cursor-pointer"><h1 class="text-2xl lg:text-3xl pb-5 pt-5 font-bold">Pablo del Rincón</h1></a>
-      <nav>
-          <button id="menu-toggle" class="block md:hidden text-3xl cursor-pointer">
-            <i class="fas fa-bars"></i>
-          </button>
-          <ul id="nav-menu" class="hidden md:flex gap-6 text-sm font-semibold md:items-center">
-            <li><a href="../../index.html" class="font-semibold hover:bg-gray-200 hover:text-white px-4 py-3">Home</a></li>
-            <li class="relative group">
-              <a class=" cursor-pointer font-semibold hover:bg-gray-200 hover:text-white px-4 py-3 flex items-center justify-between w-full">Projects</a>
-              <ul class="absolute right-0 top-full mt-0 w-[400px] bg-white font-medium text-black shadow-lg hidden group-hover:block lg:group-hover:block z-50">
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/modric.html">Modric - Frame the game</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/romanista.html">MatchWornShirt – What it means to be a Romanista</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/psg.html">PSG x Fabricks Campaign video</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/poppy.html">Poppy's Appeal</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/sporting.html">Sporting CP Pink October Campaign x MWS</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/damo.html">DAMÒ – AI Brand Video</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/lazio.html">MatchWornShirt – The Story of Mauro Patrizi</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/vintage.html">Wanna Vintage - Vintage Fashion</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/blurred_party.html">Blurred Party</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/collectors.html">Collector's History</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/chelsea.html">MatchWornShirt - Chelsea's announcement</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/fifpro.html">FIFPRO Event - Working session</a></li>
-                  <li><a class="block py-6 hover:bg-gray-200 hover:text-white w-full px-4" href="/html/projects html/event.html">MatchWornShirt - Partnership & Kitman Event</a></li>
-              </ul>
-            </li>
-            <li><a href="/html/about.html" class="font-semibold hover:bg-gray-200 hover:text-white px-4 py-3">About</a></li>
-            <li class="flex flex-col items-center relative group">
-              <a href="mailto:pabloringab@gmail.com" 
-                  class="cursor-pointer bg-gradient-to-b from-black to-gray-700 px-4 py-3 border text-white font-medium rounded-sm relative overflow-hidden">
-                  
-                  <div class="relative overflow-hidden">
-                      <p class="group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">Email me</p>
-                      <p class="absolute top-7 left-0 group-hover:top-0 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">Email me</p>
-                  </div>
-              </a>
-            </li>
-          </ul>
-      </nav>
+        <nav class="nav-header" id="nav">
+            <ul class="ul-header">
+                <li><a href="about.html">About</a></li>
+                <li class="projects-header">
+                    <a href="#" id="projects">Projects <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="menu-desplegable" id="subprojects">
+                        <li><a href="romanista.html">MatchWornShirt – What it means to be a Romanista</a></li>
+                        <li><a href="psg.html">PSG x Fabricks Campaign video</a></li>
+                        <li><a href="poppy.html">Poppy's Appeal</a></li>
+                        <li><a href="sporting.html">Sporting CP Pink October Campaign x MWS</a></li>
+                        <li><a href="damo.html">DAMÒ – AI Brand Video</a></li>
+                        <li><a href="lazio.html">MatchWornShirt – The Story of Mauro Patrizi</a></li>
+                        <li><a href="blurred_party.html">Blurred Party</a></li>
+                        <li><a href="fifpro.html">FIFPRO Event - Working session</a></li>
+                        <li><a href="collectors.html">Collector's History</a></li>
+                        <li><a href="vintage.html">Wanna Vintage - Vintage Fashion</a></li>
+                        <li><a href="chelsea.html">MatchWornShirt - Chelsea's Announcement</a></li>
+                        <li><a href="event.html">MatchWornShirt – Partnership & Kitman Event</a></li>
+                        <li><a href="modric.html">Modriç - Frame the Game</a></li>
+                        <li><a href="">Project 14</a></li>
+                        <li><a href="">Project 15</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <div class="right-group">
+            <a class="button" href="mailto:pabloringab@gmail.com" class="email"><i class="fa-regular fa-envelope"></i></i><span>Email me</span></a>            
+            <a class="menu" id="menu-toggle" href="#"><i class="fa-solid fa-bars"></i></a>            
+        </div>
+
     </header>
 
-    <main class="flex flex-col justify-center items-center mt-[10px]">
+    <!--Main-->
+    <main>
 
-        <section class="relative w-full">
-        <img src="/images/homepagebanner.jpg" alt="Homepagebanner"
-            class="mx-auto max-w-[85%] w-full h-auto object-cover brightness-[75%] z-0" />
-        
-        <div class="absolute mx-auto max-w-[85%] w-full text-white z-10 absolute inset-0 flex flex-col items-start justify-center pl-3">
-            <h2 class="text-[6vw]">Pablo del Rincón</h2>
-            <span class="text-[3vw] italic">Filmmaker and Creative Director</span>
+        <section class="hero">
+            <img src="/images/homepagebanner.jpg" alt="Homepagebanner" />
+            
+            <div class="hero-text">
+            <h2>Pablo del Rincón</h2>
+            <span>Filmmaker and Creative Director</span>
 
-            <div class="flex gap-4 md:pt-2">
+            <div class="social-icons">
                 <a href="https://www.instagram.com/pablodelrincn/">
-                    <i class="fa-brands fa-instagram text-[3vw]  hover:scale-[1.2] ease-in-out duration-300"></i>
+                <i class="fa-brands fa-instagram"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/pablo-d-8595441a0/">
-                    <i class="fa-brands fa-linkedin text-[3vw] text-[#0A66C2] hover:scale-[1.2] ease-in-out duration-300"></i>
+                <i class="fa-brands fa-linkedin"></i>
                 </a>
             </div>
-        </div>
-        </section>
-
-        <section class="flex flex-col lg:flex-row gap-10  my-10 lg:my-20 max-w-[85%] mx-auto w-full">
-            <img src="/images/perfil.png" alt="Foto de Perfil" class="w-full lg:w-1/2 h-auto shadow-lg max-w-full">
-            <div class="flex flex-col gap-5">
-                <h3 class="text-xl md:text-2xl lg:text-3xl border-b-[5px] md:border-b-[7px] lg:border-b-[8px] w-[40px] md:w-[60px] lg:w-[100px] border-black pb-3">Description</h3>
-                <div class="flex flex-col gap-5 text-base md:text-lg lg:text-xl">
-                    <p>
-                        I’m an audiovisual storyteller with a deep passion for capturing emotions and telling visual stories that move people. Whether it’s through video, photography, or music, I love creating content that feels authentic and engaging.
-                    </p>
-                    <p>
-                        My background spans sports, music, and short-form content, but at the core, I’m driven by creativity, culture, and connection. I’m always looking for new ways to grow, collaborate, and take my craft to the next level — approaching every project with energy, purpose, and a commitment to making something truly memorable.
-                    </p>
-                </div>
             </div>
         </section>
 
-
-        <section class="flex flex-col lg:flex-row gap-10 mb-20 max-w-[85%] mx-auto w-full items-center">
-            <div class="flex flex-col gap-3 order-2 lg:order-1 lg:w-[50%]">
-                <h3 class="text-xl md:text-2xl lg:text-3xl border-b-[5px] md:border-b-[7px] lg:border-b-[8px] w-[25px] md:w-[40px] lg:w-[45px] border-black pb-2">Roles</h3>
-                <div class="text-base md:text-lg lg:text-xl">
-                    <h4 class="font-bold">Creative Director</h4>
-                    <p class="pt-1">I lead bold visual storytelling across sports, music, and brands—driving ideas from concept to execution.</p>
-                </div>
-                <div class="text-base md:text-lg lg:text-xl">
-                    <h4 class="font-bold">Video Producer & Colorist</h4>
-                    <p class="pt-1">I produce and style videos end-to-end, using cinematic color to craft polished, dynamic visuals.</p>
-                </div>
-                <div class="text-base md:text-lg lg:text-xl">
-                    <h4 class="font-bold">Photographer & Photo Editor </h4>
-                    <p class="pt-1">I capture and refine striking, authentic images—bringing energy and mood to portraits, lifestyle, and sports.</p>
-                </div>
+        <section class="description">
+            <img src="/images/perfil.png" alt="Foto de Perfil">
+            <div class="text-block">
+            <h3>Description</h3>
+            <div class="text-content">
+                <p>
+                I’m an audiovisual storyteller with a deep passion for capturing emotions and telling visual stories that move people. Whether it’s through video, photography, or music, I love creating content that feels authentic and engaging.
+                </p>
+                <p>
+                My background spans sports, music, and short-form content, but at the core, I’m driven by creativity, culture, and connection. I’m always looking for new ways to grow, collaborate, and take my craft to the next level — approaching every project with energy, purpose, and a commitment to making something truly memorable.
+                </p>
             </div>
-            <img src="/images/silva.png" alt="chatting with Silva" class="w-full lg:w-1/2 h-auto shadow-lg max-w-full order-1 lg:order-2"/>
-        </section>
-
-        <section class="flex flex-col justify-center items-center my-10 mx-[40px] gap-16">
-            <div class="flex flex-col gap-7">
-                <h3 class="text-6xl">Softwares</h3>
-                <span class="block w-[150px] border-b-[10px] border-black"></span>
-            </div>
-            <div class="flex flex-col flex-wrap lg:flex-row gap-10">
-                <div class="flex flex-col items-center text-center w-[200px]">
-                    <div class="flex items-center justify-center pb-10">
-                        <img src="/images/iconos/premiere.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
-                    </div>
-                    <h4 class="text-2xl font-bold">Adobe Premiere Pro</h4>
-                    <h5 class="text-xl font-semibold text-gray-300">Video Editing</h5>
-                    <p class="pt-2">Professional software for editing videos with powerful and flexible tools.</p>
-                </div>
-                <div class="flex flex-col items-center text-center w-[200px]">
-                    <div class="flex items-center justify-center pb-10">
-                        <img src="/images/iconos/davinci.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
-                    </div>
-                    <h4 class="text-2xl font-bold">Davinci Resolve</h4>
-                    <h5 class="text-xl font-semibold text-gray-300">Video Editing & Color Grading</h5>
-                    <p class="pt-2">Advanced application for video editing and professional cinematic color correction.</p>
-                </div>
-                <div class="flex flex-col items-center text-center w-[200px]">
-                    <div class="flex items-center justify-center pb-10">
-                        <img src="/images/iconos/lightroom.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
-                    </div>
-                    <h4 class="text-2xl font-bold">Adobe Lightroom</h4>
-                    <h5 class="text-xl font-semibold text-gray-300">Photo Editing & Color</h5>
-                    <p class="pt-2">Intuitive software for editing photos and adjusting color quickly easily.</p>
-                </div>
-                <div class="flex flex-col items-center text-center w-[200px]">
-                    <div class="flex items-center justify-center pb-10">
-                        <img src="/images/iconos/photoshop.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
-                    </div>
-                    <h4 class="text-2xl font-bold">Adobe Photoshop</h4>
-                    <h5 class="text-xl font-semibold text-gray-300">Image Editing</h5>
-                    <p class="pt-2">Versatile tool for editing images and creating high-quality visual compositions.</p>
-                </div>
-                <div class="flex flex-col items-center text-center w-[200px]">
-                    <div class="flex items-center justify-center pb-10">
-                        <img src="/images/iconos/effects.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
-                    </div>
-                    <h4 class="text-2xl font-bold">Adobe After Effects</h4>
-                    <h5 class="text-xl font-semibold text-gray-300">Motion Graphics</h5>
-                    <p class="pt-2">Software for animating graphics, visual effects, and dynamic video compositions.</p>
-                </div>
             </div>
         </section>
 
-        <div class="w-[90%] h-[2px] bg-gray-200 my-20 mx-auto"></div>
+        <section class="roles">
+            <div class="roles-text">
+            <h3>Roles</h3>
 
-        <section class="flex flex-col justify-center items-center mx-20 mb-20 gap-14">
-            <div class="flex flex-col gap-7">
-                <h3 class="text-6xl">Languages</h3>
-                <span class="block w-[150px] border-b-[10px] border-black"></span>
+            <div class="role">
+                <h4>Creative Director</h4>
+                <p>I lead bold visual storytelling across sports, music, and brands—driving ideas from concept to execution.</p>
             </div>
-            <div class="flex flex-col flex-wrap lg:flex-row gap-10 pb-5 items-start justify-center">
-                <div class="flex flex-col w-[300px] text-center">
-                    <div class="flex items-center justify-center">
-                        <img src="/images/flags/spain.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
-                    </div>
-                    <h4 class="text-2xl font-bold">Spanish</h4>
-                    <p class="pt-2">Native speaker with full fluency and rich vocabulary.</p>
-                </div>
-                <div class="flex flex-col items-center w-[300px] text-center">
-                    <div class="flex items-center justify-center">
-                        <img src="/images/flags/uk.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto">
-                    </div>
-                    <h4 class="text-2xl font-bold">English</h4>
-                    <p class="pt-2">Advanced communication skills, fluent and confident in all contexts.</p>
-                </div>
-                <div class="flex flex-col items-center w-[300px] text-center">
-                    <div class="flex items-center justify-center">
-                        <img src="/images/flags/cataluña.png" alt="Adobe Premiere Pro" class="w-[120px] h-auto]">
-                    </div>
-                    <h4 class="text-2xl font-bold">Catalan</h4>
-                    <p class="pt-2">Conversational, warm, and comfortable for everyday use.</p>
-                </div>
-                <div class="flex flex-col items-center w-[300px] text-center">
-                    <div class="flex items-center justify-center">
-                        <img src="/images/flags/italia.png" alt="Adobe Premiere Pro" class="w-[120px] h-[85px] h-auto">
-                    </div>
-                    <h4 class="text-2xl font-bold">Italian</h4>
-                    <p class="pt-2">Intermediate level, capable of handling casual conversations and basic professional interactions.</p>
-                </div>
+
+            <div class="role">
+                <h4>Video Producer & Colorist</h4>
+                <p>I produce and style videos end-to-end, using cinematic color to craft polished, dynamic visuals.</p>
+            </div>
+
+            <div class="role">
+                <h4>Photographer & Photo Editor</h4>
+                <p>I capture and refine striking, authentic images—bringing energy and mood to portraits, lifestyle, and sports.</p>
+            </div>
+            </div>
+
+            <img src="/images/silva.png" alt="chatting with Silva" class="roles-img">
+        </section>
+
+        <section class="softwares">
+            <div class="section-header">
+            <h3>Softwares</h3>
+            <span class="underline"></span>
+            </div>
+
+            <div class="softwares-grid">
+            <div class="software">
+                <img src="/images/iconos/premiere.png" alt="Adobe Premiere Pro">
+                <h4>Adobe Premiere Pro</h4>
+                <h5>Video Editing</h5>
+                <p>Professional software for editing videos with powerful and flexible tools.</p>
+            </div>
+
+            <div class="software">
+                <img src="/images/iconos/davinci.png" alt="Davinci Resolve">
+                <h4>Davinci Resolve</h4>
+                <h5>Video Editing & Color Grading</h5>
+                <p>Advanced application for video editing and professional cinematic color correction.</p>
+            </div>
+
+            <div class="software">
+                <img src="/images/iconos/lightroom.png" alt="Adobe Lightroom">
+                <h4>Adobe Lightroom</h4>
+                <h5>Photo Editing & Color</h5>
+                <p>Intuitive software for editing photos and adjusting color quickly and easily.</p>
+            </div>
+
+            <div class="software">
+                <img src="/images/iconos/photoshop.png" alt="Adobe Photoshop">
+                <h4>Adobe Photoshop</h4>
+                <h5>Image Editing</h5>
+                <p>Versatile tool for editing images and creating high-quality visual compositions.</p>
+            </div>
+
+            <div class="software">
+                <img src="/images/iconos/effects.png" alt="Adobe After Effects">
+                <h4>Adobe After Effects</h4>
+                <h5>Motion Graphics</h5>
+                <p>Software for animating graphics, visual effects, and dynamic video compositions.</p>
+            </div>
             </div>
         </section>
 
+        <div class="divider"></div>
+
+        <section class="languages">
+            <div class="section-header">
+            <h3>Languages</h3>
+            <span class="underline"></span>
+            </div>
+
+            <div class="languages-grid">
+            <div class="language">
+                <img src="/images/flags/spain.png" alt="Spanish Flag">
+                <h4>Spanish</h4>
+                <p>Native speaker with full fluency and rich vocabulary.</p>
+            </div>
+
+            <div class="language">
+                <img src="/images/flags/uk.png" alt="UK Flag">
+                <h4>English</h4>
+                <p>Advanced communication skills, fluent and confident in all contexts.</p>
+            </div>
+
+            <div class="language">
+                <img src="/images/flags/cataluña.png" alt="Catalan Flag">
+                <h4>Catalan</h4>
+                <p>Conversational, warm, and comfortable for everyday use.</p>
+            </div>
+
+            <div class="language">
+                <img src="/images/flags/italia.png" alt="Italian Flag">
+                <h4>Italian</h4>
+                <p>Intermediate level, capable of handling casual conversations and basic professional interactions.</p>
+            </div>
+            </div>
+        </section>
 
     </main>
 
-    <footer class="relative bg-black flex flex-col items-center justify-center p-10 gap-3 w-full overflow-hidden">
+    <footer>
         <nav>
-            <ul class="flex flex-col gap-[20px] pb-12 text-[14px] lg:flex-row lg:pb-10 lg:gap-[200px]">
-                <li><a class="font-normal text-white lg:border-b-4 pb-[27px] border-transparent hover:border-b-gray-300 ease-in-out duration-500" href="../index.html">Home</a></li>
-                <li><a class="font-normal text-white lg:border-b-4 pb-[27px] border-transparent hover:border-b-gray-300 ease-in-out duration-500" href="">Projects</a></li>
-                <li><a class="font-normal text-white lg:border-b-4 pb-[27px] border-transparent hover:border-b-gray-300 ease-in-out duration-500" href="about.html">About</a></li>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="mailto:pabloringab@gmail.com">Email me</a></li>
             </ul>
+
+            <hr>
+
+            <div>
+                <a class="instagram" href="https://www.instagram.com/pablodelrincn/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a class="linkedin"href="https://www.linkedin.com/in/pablo-d-8595441a0/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+            </div>
         </nav>
-        <div class="absolute bottom-[135px] left-1/2 -translate-x-1/2 w-[90%] h-[1px] z-0 bg-gray-300"></div>
-        <a class="text-white text-[14px] lg:pt-2" href="mailto:pabloringab@gmail.com">pabloringab@gmail.com</a>
-        <div class="flex gap-5">
-            <a href="https://www.instagram.com/pablodelrincn/"><i class="fa-brands fa-instagram text-3xl hover:scale-[1.1] ease-in-out duration-300"></i></a>
-            <a href="https://www.linkedin.com/in/pablo-d-8595441a0/"><i class="fa-brands fa-linkedin text-[#0A66C2] text-3xl hover:scale-[1.1] ease-in-out duration-300"></i></a>
-        </div>
+
+        <span>2025 Pablo del Rincón. All rights reserved.</span>
     </footer>
 
-    <script src="../index.js"></script>
-
+    <script src="../script/script.js"></script>
 </body>
 </html>
