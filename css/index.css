@@ -67,6 +67,10 @@ a {
     color: #FDFCFB;
 }
 
+.button span {
+    display: block;
+}
+
 .button:hover {
     background-color:#1c253b;
 }
@@ -351,6 +355,26 @@ footer nav div {
     .projects-img {
         padding: 20px 1rem;
         gap: 25px;
+    }
+
+    .right-group {
+        gap: 10px;
+    }
+
+    .button {
+        background:#141414;
+        border: 1px solid #dddddd;
+        color:#FDFCFB;
+        font-size: 1.5rem;
+        padding: 0.6rem;
+    }
+
+    .button span {
+        display: none;
+    }
+
+    .button:hover {
+        background:#1c253b;
     }
 
     footer nav ul {
