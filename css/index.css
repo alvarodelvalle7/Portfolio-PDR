@@ -258,23 +258,6 @@ footer nav div {
 
 @media (max-width: 992px) {
 
-    .ul-header {
-        gap: 30px;
-    }
-
-    #subprojects.active {
-        padding: 20px 40px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .projects-img {
-        grid-template-columns: repeat(2, 1fr);
-    }
-  
-}
-
-@media (max-width: 600px) {
-
     .menu {
         display: block;
         cursor: pointer;
@@ -331,6 +314,19 @@ footer nav div {
         align-items: center;
         gap: 15px;
     }
+
+    #subprojects.active {
+        padding: 20px 40px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+}
+
+@media (max-width: 600px) {
 
     .projects-img {
         grid-template-columns: 1fr;
