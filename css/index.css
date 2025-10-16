@@ -30,10 +30,8 @@ header {
     justify-content: space-between;
     position: relative;
     z-index: 1000;
-    padding: 15px clamp(1rem, 5vw, 150px);
-    max-width: 1300px;
-    margin: 0 auto;
-    width: 100%;
+    padding: 1rem;
+    width: 90%;
 }
 
 h1 a {
@@ -45,7 +43,7 @@ h1 a {
 .ul-header{
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 2rem;
     list-style: none;
 }
 
@@ -62,9 +60,9 @@ a {
 .button {
     display: flex;
     align-items: center;
-    gap: 15px;
-    padding: 12px 17px;
-    border-radius: 6px;
+    gap: 0.6rem;
+    padding: 0.8rem 1rem;
+    border-radius: 0.4rem;
     background-color: #141414;
     color: #FDFCFB;
 }
@@ -83,9 +81,9 @@ a {
     position: absolute;
     gap: 30px;
     top: 80px;
-    right:0;
+    left:0;
     width: 100%;
-    padding: 20px 150px;
+    padding: 1.5rem 3rem;
     list-style: none;
     background-color: #fdfcfbf9;
     border-top: 1px solid #dddddd;
@@ -120,27 +118,25 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    padding-top: 30px;
 }
 
 iframe {
-    width: 100vw;
-    height: clamp(250px, 50vw, 550px);
-    padding: 0 clamp(1rem, 5vw, 150px);
-    box-sizing: border-box;
-    max-width: 1300px;
+    width: 90%;
+    height: auto;
+    aspect-ratio: 16/ 9;
+    padding-top: 1.5rem;
+    padding: 1rem;
+    aspect-ratio: 16/ 9;
 }
 
 .projects-img {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 42px;
-    width: 100%;
-    padding: 40px clamp(1rem, 5vw, 150px);
-    box-sizing: border-box;
-    max-width: 1300px;
-    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 90%;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    display: grid;
 }
 
 .projects-img a {
@@ -256,17 +252,7 @@ footer nav div {
     color: #0A66C2;
 }
 
-@media (max-width:1200px) {
-    iframe {
-        width:99vw;
-    }
-}
-
-
-@media (max-width: 1000px) {
-    header {
-        padding: 15px 40px;
-    }
+@media (max-width: 992px) {
 
     .ul-header {
         gap: 30px;
@@ -277,16 +263,13 @@ footer nav div {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    iframe {
-        width:98vw;
+    .projects-img {
+        grid-template-columns: repeat(2, 1fr);
     }
   
 }
 
-@media (max-width: 768px) {
-    header {
-        padding: 15px 25px;
-    }
+@media (max-width: 600px) {
 
     .menu {
         display: block;
@@ -345,8 +328,8 @@ footer nav div {
         gap: 15px;
     }
 
-    iframe {
-        width:97vw;
+    .projects-img {
+        grid-template-columns: 1fr;
     }
 
     footer nav ul {
