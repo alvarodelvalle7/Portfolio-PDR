@@ -30,10 +30,8 @@ header {
     justify-content: space-between;
     position: relative;
     z-index: 1000;
-    padding: 15px clamp(1rem, 5vw, 150px);
-    max-width: 1300px;
-    margin: 0 auto;
-    width: 100%;
+    padding: 1rem;
+    width: 90%;
 }
 
 h1 a {
@@ -45,7 +43,7 @@ h1 a {
 .ul-header{
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 2rem;
     list-style: none;
 }
 
@@ -62,11 +60,15 @@ a {
 .button {
     display: flex;
     align-items: center;
-    gap: 15px;
-    padding: 12px 17px;
-    border-radius: 6px;
+    gap: 0.6rem;
+    padding: 0.8rem 1rem;
+    border-radius: 0.4rem;
     background-color: #141414;
     color: #FDFCFB;
+}
+
+.button span {
+    display: block;
 }
 
 .button:hover {
@@ -83,9 +85,9 @@ a {
     position: absolute;
     gap: 30px;
     top: 80px;
-    right:0;
+    left:0;
     width: 100%;
-    padding: 20px 150px;
+    padding: 1.5rem 3rem;
     list-style: none;
     background-color: #fdfcfbf9;
     border-top: 1px solid #dddddd;
@@ -115,14 +117,17 @@ a {
     background-color: #f8f8f8;
 }
 
+/* Footer*/
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    gap: 20px;
+    gap: 1.5rem;
     background-color: #141414;
-    width:100vw;
+    padding: 1.5rem 0;
+    width: 100%;
+    max-width: 1600px;
+
 }
 
 footer nav {
@@ -139,9 +144,10 @@ footer span {
 footer nav ul {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100vw;
-    gap: 150px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: clamp(2rem, 6vw, 150px);
+    width: 100%;
 }
 
 footer nav ul li a {
@@ -155,11 +161,10 @@ footer nav ul li a {
 
 footer nav ul li a:hover {
     border-bottom: 5px solid #dddddd;
-    
 }
 
 footer nav hr {
-    width: 90vw;
+    width: 83.5vw;
     color: #dddddd;
     z-index: 0;
 }
@@ -187,37 +192,7 @@ footer nav div {
     color: #0A66C2;
 }
 
-@media (max-width:1200px) {
-    iframe {
-        width:99vw;
-    }
-}
-
-
-@media (max-width: 1000px) {
-    header {
-        padding: 15px 40px;
-    }
-
-    .ul-header {
-        gap: 30px;
-    }
-
-    #subprojects.active {
-        padding: 20px 40px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    iframe {
-        width:98vw;
-    }
-  
-}
-
-@media (max-width: 768px) {
-    header {
-        padding: 15px 25px;
-    }
+@media (max-width: 992px) {
 
     .menu {
         display: block;
@@ -276,17 +251,23 @@ footer nav div {
         gap: 15px;
     }
 
-    iframe {
-        width:97vw;
+    #subprojects.active {
+        padding: 20px 40px;
+        grid-template-columns: repeat(2, 1fr);
     }
+  
+}
+
+@media (max-width: 600px) {
 
     footer nav ul {
         flex-direction: column;
-        border:none
+        align-items: center;
+        list-style: none;
     }
 
-    footer nav ul {
-        flex-direction: column;
+    footer nav ul li a:hover {
+        border-bottom: none;
     }
 
     @keyframes fadeIn {
@@ -296,17 +277,28 @@ footer nav div {
 }
 
 @media (max-width: 480px) {
-    .projects-img {
-        padding: 20px 1rem;
-        gap: 25px;
+    
+    .right-group {
+        gap: 10px;
+    }
+
+    .button {
+        background:#141414;
+        border: 1px solid #dddddd;
+        color:#FDFCFB;
+        font-size: 1.5rem;
+        padding: 0.6rem;
+    }
+
+    .button span {
+        display: none;
+    }
+
+    .button:hover {
+        background:#1c253b;
     }
 
     footer nav ul {
         gap: 1.5rem;
-    }
-
-    iframe {
-        height: 220px;
-        padding: 0 1rem;
     }
 }
