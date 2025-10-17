@@ -121,7 +121,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2.45rem;
+    padding: 4.45rem;
 }
 
 svg {
