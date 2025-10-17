@@ -140,7 +140,8 @@ main {
     aspect-ratio: 16/ 9;
     padding-top: 1.5rem;
     padding: 1rem;
-    filter: brightness(0.7)
+    object-fit: cover;
+    filter: brightness(0.9);
 }
 
 .hero-text {
@@ -152,7 +153,7 @@ main {
     justify-content: end;
     gap: 0.5rem;
     padding: 3.5rem;
-    color: #FDFCFB;
+    color: #ffffff;
 }
 
 .hero-text h2 {
