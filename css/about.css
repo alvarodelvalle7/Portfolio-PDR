@@ -178,9 +178,10 @@ main hr {
 
 .description {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  width: 87%;
+  width: 100vw;
   padding: 1rem 0;
   gap: 2rem;
   flex-wrap: wrap;
@@ -188,14 +189,12 @@ main hr {
 
 
 .card {
-  flex: 1 1 45%;
-  background: #fff;
-  border-radius: 0.2rem;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 42.5%;
+    background: #fff;
+    border-radius: 0.2rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
@@ -423,14 +422,18 @@ footer nav div {
         font-size: 2rem;
     }
 
+    main hr {
+        width: 85%;
+        margin: 1rem;
+    }
+
     .description {
         flex-direction: column;
         align-items: center;
     }
 
     .card {
-        flex: 1 1 100%;
-        max-width: 600px;
+        width: 85.5%;
     }
   
 }
@@ -455,6 +458,15 @@ footer nav div {
     .social-icons {
         gap: 0.8rem;
         font-size: 1.5rem;
+    }
+
+    main hr {
+        width: 81%;
+        margin: 0.5rem;
+    }
+
+    .card {
+        width: 81%;
     }
 
     footer nav ul {
