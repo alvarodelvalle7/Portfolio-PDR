@@ -511,6 +511,15 @@ footer nav div {
         background:#1c253b;
     }
 
+    main hr {
+        width: 80%;
+        margin: 0.5rem;
+    }
+
+    .card {
+        width: 79%;
+    }
+
     footer nav ul {
         gap: 1.5rem;
     }
