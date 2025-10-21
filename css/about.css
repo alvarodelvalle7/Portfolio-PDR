@@ -189,7 +189,6 @@ main hr {
     display: flex;
     flex-direction: column;
     background: #fff;
-    border-radius: 1rem;
     box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     overflow: hidden;
     height: 100%;
@@ -243,7 +242,6 @@ main hr {
     gap: 0.2rem;
     box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     padding: 1.2rem;
-    border-radius: 1rem;
     width: 20%;
     text-align: center;
 }
@@ -293,7 +291,6 @@ main hr {
     width: 25%;
     box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     padding: 1rem;
-    border-radius: 1rem;
 }
 
 .language h4 {
@@ -526,6 +523,8 @@ footer nav div {
     }
 
     .description {
+        grid-template-columns: 1fr;
+        width: 89%;
         padding: 1rem 1.3rem;
     }
 
@@ -574,6 +573,10 @@ footer nav div {
 
     .button:hover {
         background:#1c253b;
+    }
+
+    .description {
+        width: 93%;
     }
 
     footer nav ul {
