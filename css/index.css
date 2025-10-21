@@ -350,7 +350,7 @@ footer nav div {
 @media (max-width: 480px) {
     .projects-img {
         padding: 20px 1rem;
-        gap: 25px;
+        gap: 1rem;
     }
 
     .right-group {
