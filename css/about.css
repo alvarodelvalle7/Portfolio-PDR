@@ -470,13 +470,12 @@ footer nav div {
 
     main hr {
         width: 86%;
-        margin: 1rem;
     }
 
     .softwares-flex {
         flex-direction: column;
         align-items: center;
-        padding: 1rem 1.3rem;
+        padding: 1rem 1.1rem;
     }
 
     .software {
@@ -533,6 +532,10 @@ footer nav div {
         padding: 1.7rem;
     }
 
+    .softwares-flex {
+        padding: 0 1.3rem;
+    }
+
     footer nav ul {
         flex-direction: column;
         align-items: center;
@@ -576,7 +579,12 @@ footer nav div {
     }
 
     .description {
-        width: 93%;
+        width: 92.5%;
+    }
+
+    main hr {
+        width: 83.3%;
+        margin: 0.3rem;
     }
 
     footer nav ul {
