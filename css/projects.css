@@ -125,12 +125,13 @@ main {
     gap: 0.5rem;
     width: 100vw;
     padding: 1rem 0;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .text {
     display: flex;
-    align-items:center;
+    flex-direction: column;
+    align-items:start;
     width: 89%;
     padding: 0 1rem;
     padding-bottom: 1rem;
@@ -145,7 +146,6 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
-    width: 40%;
 }
 
 .roles {
@@ -166,7 +166,6 @@ h2 {
 .description {
     display: flex;
     flex-direction: column;
-    width: 60%;
     gap: 0.5rem;
 }
 
