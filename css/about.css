@@ -170,11 +170,6 @@ main {
     font-size: 3rem;
 }
 
-main hr {
-    width: 87%;
-    margin: 1rem;
-}
-
 .description {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
