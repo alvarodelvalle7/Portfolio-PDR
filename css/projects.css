@@ -130,27 +130,27 @@ main {
 
 .text {
     display: flex;
-    align-items: stretch;
+    align-items:center;
     width: 89%;
-    padding: 1rem;
-    gap: 1rem;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+    gap: 2rem;
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 4rem;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
-    width: 50%;
+    width: 40%;
 }
 
 .roles {
     display: flex;
     flex-wrap: wrap;
-    width:400px;
     gap: 0.2rem;
 }
 
@@ -166,12 +166,16 @@ h2 {
 .description {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     gap: 0.5rem;
 }
 
 .description h3 {
     font-size: 2rem;
+}
+
+.description p {
+    font-size: 1.2rem;
 }
 
 iframe {
@@ -330,6 +334,7 @@ footer nav div {
 
     .text {
         flex-direction: column;
+        gap: 1rem;
     }
 
     .text h2 {
