@@ -357,6 +357,11 @@ footer nav div {
 
 @media (max-width: 600px) {
 
+    .text h2 {
+        font-size: 2.5rem;
+        width: 100%;
+    }
+
     footer nav ul {
         flex-direction: column;
         align-items: center;
